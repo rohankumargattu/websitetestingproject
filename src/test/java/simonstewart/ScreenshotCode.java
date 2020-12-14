@@ -42,7 +42,7 @@ public class ScreenshotCode
 		//Way 4(Screenshot in project folder with dynamic name)
 		SimpleDateFormat sf2=new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss");
 		Date dt2=new Date();
-		String fname2=sf.format(dt2)+".png";
+		String fname2=sf2.format(dt2)+".png";
 		File src3=driver.getScreenshotAs(OutputType.FILE);
 		File dest3=new File(fname2);
 		FileHandler.copy(src3, dest3);
