@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SelectClassAllMethods1
+public class SelectClassSingleSelect
 {
 	public static void main(String[] args) throws Exception
 	{
