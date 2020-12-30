@@ -15,9 +15,12 @@ public class FindElementsMethod
 {
 	public static void main(String[] args) throws Exception
 	{
+		//Open browser
 		WebDriverManager.chromedriver().setup();
 		RemoteWebDriver driver=new ChromeDriver();
+		//Launch site
 		driver.get("https://www.mercurytravels.co.in/");
+		//Maximize
 		driver.manage().window().maximize();
 		WebDriverWait wait=new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("No, thanks"))).click();
@@ -36,23 +39,23 @@ public class FindElementsMethod
 		
 		//Count of select tag dropdowns in page
 		//Way1
-		int c1=0;
-		int c2=0;
+		int count1=0;
+		int count2=0;
 		List<WebElement> l4=driver.findElements(By.tagName("select"));
 		System.out.println("Total select tag dropdowns count is "+l4.size());
 		for(int i=0;i<l4.size();i++)
 		{
 			if(l4.get(i).isDisplayed())
 			{
-				c1=c1+1;
+				count1=count1+1;
 			}
 			else
 			{
-				c2=c2+1;
+				count2=count2+1;
 			}
 		}
-		System.out.println("Visible select tag dropdowns count is "+c1);
-		System.out.println("Invisible select tag dropdowns count is "+c2);
+		System.out.println("Visible select tag dropdowns count is "+count1);
+		System.out.println("Invisible select tag dropdowns count is "+count2);
 		
 		//Way2
 		List<WebElement> l5=driver.findElements(By.xpath("//select"));
