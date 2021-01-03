@@ -22,6 +22,7 @@ public class ActionsClassHorizontalSlider
 		int xos2=sc.nextInt();
 		System.out.println("Enter y offset value for backward slide");
 		int yos2=sc.nextInt();
+		sc.close();
 		//Launch browser
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();

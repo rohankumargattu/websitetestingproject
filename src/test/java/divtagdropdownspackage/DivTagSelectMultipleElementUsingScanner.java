@@ -26,6 +26,7 @@ public class DivTagSelectMultipleElementUsingScanner
 			System.out.println("Enter element"+(i+1)+":");
 			al.add(sc.nextLine());
 		}
+		sc.close();
 		//Launch browser
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
