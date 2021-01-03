@@ -40,6 +40,8 @@ public class JSScrolling
 		WebElement e=driver.findElement(By.xpath("(//*[contains(@class,'ui fluid dropdown')])[1]"));
 		//JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();",e);
+		Thread.sleep(3000);
+		js.executeScript("arguments[0].style.border='2px dashed red';",e);
 		//driver.executeScript("arguments[0].scrollIntoView();",e);
 		Thread.sleep(3000);
 		

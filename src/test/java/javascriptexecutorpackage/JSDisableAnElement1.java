@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class JSDisableAnElement
+public class JSDisableAnElement1
 {
 	public static void main(String[] args) throws Exception
 	{
@@ -18,7 +18,7 @@ public class JSDisableAnElement
 		//Maximize
 		driver.manage().window().maximize();
 		//Launch site
-		driver.get("http://newtours.demoaut.com/");
+		driver.get("http://demo.guru99.com/test/newtours/");
 		WebDriverWait wait=new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("REGISTER")));
 		driver.findElement(By.linkText("REGISTER")).click();
