@@ -1,4 +1,4 @@
-package selecttagdropdowns;
+package selecttagdropdownspackage;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SelectClassSingleSelect
+public class SelectClassSingleSelectAllInOne
 {
 	public static void main(String[] args) throws Exception
 	{

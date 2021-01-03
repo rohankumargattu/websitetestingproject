@@ -1,4 +1,4 @@
-package selecttagdropdowns;
+package selecttagdropdownspackage;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SelectClassMultiSelect
+public class SelectClassMultiSelectAllInOne
 {
 	public static void main(String[] args) throws Exception
 	{
