@@ -14,7 +14,7 @@ public class ActionsClassCacheElementGoogleTextBox
 {
 	public static void main(String[] args) throws Exception
 	{
-		//Launch browser
+		//Launch Browser
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
 		//Maximize
